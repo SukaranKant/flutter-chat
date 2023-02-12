@@ -34,6 +34,7 @@ class _MessagesState extends State<Messages> {
             padding: const EdgeInsets.all(8),
             child: MessageBubble(
               documents[index]['text'],
+              documents[index]['username'],
               documents[index]['userId'] == FirebaseAuth.instance.currentUser.uid,
               key: ValueKey(documents[index].id),
             ),
