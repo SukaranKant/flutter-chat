@@ -35,6 +35,7 @@ class _MessagesState extends State<Messages> {
             child: MessageBubble(
               documents[index]['text'],
               documents[index]['username'],
+              documents[index]['userImage'],
               documents[index]['userId'] == FirebaseAuth.instance.currentUser.uid,
               key: ValueKey(documents[index].id),
             ),
